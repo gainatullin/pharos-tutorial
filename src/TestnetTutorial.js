@@ -42,19 +42,23 @@ const PharosTestnetTutorial = () => {
                 icon = require('./daily.png');
                 break;
 
-            case '4. Social Tasks':
+            case '4. Connect your socials':
+                icon = require('./connect_socials.png');
+                break;
+
+            case '5. Social Tasks':
                 icon = require('./social_tasks.png');
                 break;
 
-            case '5. Blockchain Activity':
+            case '6. Blockchain Activity':
                 icon = require('./onchain_activity.png');
                 break;
 
-            case '6. History and Progress':
+            case '7. History and Progress':
                 icon = require('./checker.png');
                 break;
 
-            case '7. Blockchain Explorer':
+            case '8. Blockchain Explorer':
                 icon = require('./transactions.png');
                 break;
 
@@ -155,7 +159,24 @@ const PharosTestnetTutorial = () => {
                         <div className="space-y-4">
                             <div className="bg-green-900 bg-opacity-30 border border-green-700 rounded-lg p-4">
                                 <p className="text-green-300 font-medium text-center">
-                                    "Congratulations! You've earned points for daily check-in."
+                                    Congratulations! You've earned points for daily check-in.
+                                </p>
+                            </div>
+                        </div>
+                    </TutorialStep>
+
+                    <TutorialStep
+                        link={'https://testnet.pharosnetwork.xyz/experience'}
+                        title="4. Connect your socials"
+                        description="Connect your social networks in profile to complete social tasks"
+                        imageSrc="/api/placeholder/800/500"
+                        gradient="from-purple-900 to-pink-900"
+                        color="text-purple-400"
+                    >
+                        <div className="space-y-4">
+                            <div className="bg-green-900 bg-opacity-30 border border-green-700 rounded-lg p-4">
+                                <p className="text-green-300 font-medium text-center">
+                                    Congratulations! You've added your social networks and can now complete social tasks.
                                 </p>
                             </div>
                         </div>
@@ -164,7 +185,7 @@ const PharosTestnetTutorial = () => {
                     {/* Social Tasks */}
                     <TutorialStep
                         link={'https://testnet.pharosnetwork.xyz/experience'}
-                        title="4. Social Tasks"
+                        title="5. Social Tasks"
                         description="Complete social media tasks"
                         imageSrc="/api/placeholder/800/500"
                         gradient="from-orange-900 to-red-900"
@@ -195,7 +216,7 @@ const PharosTestnetTutorial = () => {
                     {/* Blockchain Activity */}
                     <TutorialStep
                         link={'https://testnet.pharosnetwork.xyz/experience'}
-                        title="5. Blockchain Activity"
+                        title="6. Blockchain Activity"
                         description="Perform transactions and interact with the protocol"
                         imageSrc="/api/placeholder/800/500"
                         gradient="from-teal-900 to-blue-900"
@@ -216,7 +237,7 @@ const PharosTestnetTutorial = () => {
                     {/* History and Progress */}
                     <TutorialStep
                         link={'https://pharoshub.xyz/'}
-                        title="6. History and Progress"
+                        title="7. History and Progress"
                         description="Track your achievements and progress"
                         imageSrc="/api/placeholder/800/500"
                         gradient="from-indigo-900 to-purple-900"
@@ -224,19 +245,18 @@ const PharosTestnetTutorial = () => {
                     >
                         <div className="space-y-4">
                             <div className="bg-gray-800 bg-opacity-50 rounded-lg p-6">
-                                <h4 className="text-xl font-semibold text-indigo-400 mb-3">What users see:</h4>
                                 <ul className="space-y-2 text-gray-300">
                                     <li className="flex items-start">
                                         <span className="text-indigo-400 mr-2">•</span>
-                                        Table or list of completed tasks
+                                        List of completed tasks
                                     </li>
                                     <li className="flex items-start">
                                         <span className="text-indigo-400 mr-2">•</span>
-                                        Current level, points count, airdrop participation status
+                                        Current level, points count
                                     </li>
                                     <li className="flex items-start">
                                         <span className="text-indigo-400 mr-2">•</span>
-                                        Progress visualization (e.g., progress bar)
+                                        Progress visualization
                                     </li>
                                 </ul>
                             </div>
@@ -250,10 +270,10 @@ const PharosTestnetTutorial = () => {
                                         <div className="text-3xl font-bold text-blue-400 mb-1">1,250</div>
                                         <div className="text-sm text-gray-400">Total points</div>
                                     </div>
-                                    <div className="bg-gray-700 bg-opacity-50 rounded-lg p-4">
-                                        <div className="text-3xl font-bold text-purple-400 mb-1">85%</div>
-                                        <div className="text-sm text-gray-400">Progress</div>
-                                    </div>
+                                    {/*<div className="bg-gray-700 bg-opacity-50 rounded-lg p-4">*/}
+                                    {/*    <div className="text-3xl font-bold text-purple-400 mb-1">85%</div>*/}
+                                    {/*    <div className="text-sm text-gray-400">Progress</div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>
@@ -262,7 +282,7 @@ const PharosTestnetTutorial = () => {
                     {/* Block Explorer */}
                     <TutorialStep
                         image={"./faucet.png"}
-                        title="7. Blockchain Explorer"
+                        title="8. Blockchain Explorer"
                         description="Explore blocks and transactions"
                         imageSrc="/api/placeholder/800/500"
                         gradient="from-gray-900 to-gray-700"
