@@ -80,6 +80,7 @@ const PharosTestnetTutorial = () => {
                                         onClick={() => window.open(link, '_blank')}
                                     />
                                 </div>
+                                <p style={{textAlign: 'center', fontSize: 12, marginTop: 4}}>Click the image to follow the link</p>
                             </div>
                             <p className="text-gray-300 text-lg leading-relaxed">{description}</p>
                         </div>
@@ -107,7 +108,7 @@ const PharosTestnetTutorial = () => {
                     {/* Homepage */}
                     <TutorialStep
                         title="1. Testnet Homepage"
-                        description="Starting point for all testnet users"
+                        description="Starting point for all testnet users. Connect your wallet"
                         imageSrc="./connect_wallet.png"
                         gradient="from-blue-900 to-purple-900"
                         color="text-blue-400"
