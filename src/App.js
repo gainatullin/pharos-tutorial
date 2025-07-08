@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronRight, ExternalLink, Check, X, Layers, Zap, Shield, Globe, Users, Code, Target, BookOpen, Award } from 'lucide-react';
+import { ExternalLink, Check, X, Layers, Zap, Shield, Globe, Users, Code, Target, BookOpen, Award } from 'lucide-react';
 import PharosTestnetTutorial from "./TestnetTutorial";
 
 const App = () => {
