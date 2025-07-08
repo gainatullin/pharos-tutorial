@@ -615,7 +615,7 @@ const App = () => {
             {/* Sidebar */}
             <div className="w-64 flex-shrink-0">
               <div className="bg-gray-900 rounded-xl p-6 border border-gray-800 sticky top-8">
-                <h2 className="text-lg font-semibold text-white mb-4">Содержание</h2>
+                <h2 className="text-lg font-semibold text-white mb-4">Content</h2>
                 <nav className="space-y-2">
                   {sections.map((section) => {
                     const Icon = section.icon;
