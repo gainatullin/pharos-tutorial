@@ -263,11 +263,11 @@ const PharosTestnetTutorial = () => {
                             <div className="bg-gray-800 bg-opacity-70 rounded-lg p-6">
                                 <div className="grid grid-cols-3 gap-6 text-center">
                                     <div className="bg-gray-700 bg-opacity-50 rounded-lg p-4">
-                                        <div className="text-3xl font-bold text-green-400 mb-1">Level 5</div>
+                                        <div className="text-3xl font-bold text-green-400 mb-1">Level 4</div>
                                         <div className="text-sm text-gray-400">Current level</div>
                                     </div>
                                     <div className="bg-gray-700 bg-opacity-50 rounded-lg p-4">
-                                        <div className="text-3xl font-bold text-blue-400 mb-1">1,250</div>
+                                        <div className="text-3xl font-bold text-blue-400 mb-1">10,250</div>
                                         <div className="text-sm text-gray-400">Total points</div>
                                     </div>
                                     {/*<div className="bg-gray-700 bg-opacity-50 rounded-lg p-4">*/}
