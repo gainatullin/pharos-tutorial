@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ExternalLink, Maximize2 } from 'lucide-react';
+import { X, ExternalLink } from 'lucide-react';
 
 const PharosTestnetTutorial = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -34,7 +34,7 @@ const PharosTestnetTutorial = () => {
             case '1. Testnet Homepage':
                 icon = require('./connect_wallet.png');
                 break;
-            case '2. Getting Test Tokens (Faucet)':
+            case '2. Getting Test Tokens (Faucet) and add Pharos network':
                 icon = require('./faucet.png');
                 break;
 
@@ -76,6 +76,19 @@ const PharosTestnetTutorial = () => {
                             <h3 className={`text-3xl font-bold text-white mb-4 ${color}`}>{title}</h3>
                             {/* Image */}
                             <div className="relative group mb-4">
+                                {title === '2. Getting Test Tokens (Faucet) and add Pharos network' && (
+                                    <>
+                                        <div className="relative mb-2 overflow-hidden rounded-xl bg-gray-800">
+                                            <img
+                                                src={require('./another_faucet.png')}
+                                                alt={title}
+                                                className="w-full h-full object-cover cursor-pointer transition-transform duration-300 group-hover:scale-105"
+                                                onClick={() => window.open('https://testnet.pharosnetwork.xyz/', '_blank')}
+                                            />
+                                        </div>
+                                        <p style={{textAlign: 'center', marginBottom: 8}}>OR</p>
+                                    </>
+                                )}
                                 <div className="relative overflow-hidden rounded-xl bg-gray-800">
                                     <img
                                         src={icon}
@@ -129,7 +142,7 @@ const PharosTestnetTutorial = () => {
 
                     {/* Faucet */}
                     <TutorialStep
-                        title="2. Getting Test Tokens (Faucet)"
+                        title="2. Getting Test Tokens (Faucet) and add Pharos network"
                         description="Free test tokens to get started"
                         imageSrc="/api/placeholder/800/500"
                         gradient="from-green-900 to-teal-900"
@@ -140,7 +153,7 @@ const PharosTestnetTutorial = () => {
                             <div className="bg-yellow-900 bg-opacity-30 border border-yellow-700 rounded-lg p-4">
                                 <h5 className="text-yellow-400 font-medium mb-2">Details:</h5>
                                 <ul className="space-y-1 text-gray-300">
-                                    <li>• Two faucets available: official (may be slow) and alternative (via Google email registration)</li>
+                                    <li>• Two faucets available: official (may be slow) and alternative</li>
                                     <li>• After request, tokens arrive in wallet within 2-3 minutes</li>
                                 </ul>
                             </div>
